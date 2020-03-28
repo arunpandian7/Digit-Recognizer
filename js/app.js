@@ -16,7 +16,7 @@ function draw(ctx,x,y,size, isDown) {
     if(isDown)
     {
       ctx.beginPath();
-      ctx.strokeStyle = "#e53935";
+      ctx.strokeStyle = "white";
       ctx.lineWidth = '15';
       ctx.lineJoin = ctx.lineCap = 'round';
       ctx.moveTo(lastX, lastY);
@@ -92,7 +92,7 @@ function getTouchPos(e) {
     }
 }   
 
-function init() {
+function init(){
 
     canvas = document.getElementById('canvas-box');
     ctx = canvas.getContext('2d');

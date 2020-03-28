@@ -27,7 +27,7 @@
 }
 
 #NavBar{
-  background-color: #880e4f;
+  background-color: #e91e63;
   color: #40aaad; /*#000 -> black*/
 }
 
@@ -39,12 +39,12 @@
   font-family: SourceSansPro-Black, Helvetica, Arial;
   font-size: 2.5rem;
   margin-bottom: 0;
-  color: #c51162;
+  color: hsla(333, 86%, 45%, 0.863);
   
 }
 
 #result{
-  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 10rem;
 }
 
@@ -64,12 +64,6 @@
 
 }
 
-#footer{
-  text-align: center;
-  padding: 1.5% 14%;
-  background-color: #880e4f;
-  color: #fff;
-}
 
 #title{
   padding: 3% 15%;
@@ -77,6 +71,14 @@
   text-align: center;
   color: black;
 }
+
+#instruction{
+  padding: 3% 15%;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+
 
 #confidence{
 font-family: OpenSans, Helvetica, Arial;
@@ -87,42 +89,64 @@ letter-spacing: 1px;
 line-height: 32px;
 text-transform: none;
 color: #5D656C;
+}
+#social{
+  padding: 3% 15%;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
 
 }
 
 
+.sub-title{
+font-family: SourceSansPro-Black, Helvetica, Arial;
+font-size: 50px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 1px;
+line-height: 60px;
+text-transform: none;
+color: rgb(24, 26, 27);
+}
+
+.buttons-wrap {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #e53935;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #e53935;
+  box-shadow: 0px 15px 20px #A72A27;
+  color: #fff;
+  transform: translateY(-7px);
+}
 
 
-.buttons {
-	box-shadow: 0px 11px 15px -6px #922522;	
-  background-color: transparent;
-  border:2px solid #e53935;
-	border-radius:14px;
-	display:inline-block;
-	cursor:pointer;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size:16px;
-  color:#e53935;
-	font-weight:normal;
-	padding:8px 14px;
-  
-}
-.buttons:hover {
-  background-color:#e53935;
-  color: white;
-}
-.buttons:active {
-	position:relative;
-	top:1px;
-}
+
 
 .social-media-icons{
   margin: 10px 40px;
-}
-
-.buttons_div{
-margin-bottom: 30px;
 }
 
 .heading{
@@ -136,7 +160,7 @@ text-transform: none;
 color: #3A4046;
 }
 
-.heading-desc{
+.description{
 font-family: OpenSans, Helvetica, Arial;
 font-size: 18px;
 font-style: normal;
@@ -180,6 +204,111 @@ padding-top: 0;
 /* padding-left: 10%; */
 }
 
+.italise-highlight{
+  font-style: italic;
+}
+
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin: -1.8rem;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #0077B5;
+}
+
+.kaggle span{
+  background-color: #20beff;
+}
+
+.github span{
+  background-color: #000000;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .icon-google-plus {
+	color: #0077B5;
+}
+.icon-button .icon-kaggle{
+  color: #20beff;
+}
+
+.icon-button .icon-github{
+  color: #000000;
+}
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .icon-kaggle,
+.icon-button:hover .icon-github {
+	color: #ffffff;
+}
+
+.button:focus{
+  outline: none;
+}
 
 
 body{
@@ -195,25 +324,7 @@ hr {
   margin-bottom: none;
 }
 
-a.footer-class :link {
-  color: white;
-  text-decoration: none;
-}
 
-a.footer-class :visited {
-  color: white;
-  text-decoration: none;
-}
-
-a.footer-class :hover {
-  color: white;
-  text-decoration: none;
-}
-
-a.footer-class :active {
-  color: white;
-  text-decoration: none;
-}
 
 @media (min-width: 720px) {
   .leftside{

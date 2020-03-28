@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="https://google.com">Blog</a>
+                  <a class="nav-link" href="https://iamarunpandian.wordpress.com">Blog</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="https://github.com/ArunRK7Codie" target="_blank">Github</a>
@@ -52,7 +52,9 @@
 
     <section id="title">
         <h1 class="heading"> Digit Recognizer</h1>
-        <p class="heading-desc"> A Deep Learning based Handwritten Digit Recognition Application built on Tensorflow and Keras</p>
+        <p class="description"> A Deep Learning based Handwritten Digit Recognition Application built on Tensorflow and Keras.
+          The web-based UI built using frameworks and libraries like Node.js, npm, Bootstrap, jQuery, Ajax.
+        </p>
         <hr>
       </section>
 
@@ -68,9 +70,9 @@
                 </canvas>
               </div>
 
-              <div class="buttons_div">
-                <a href="#" class="buttons" id="predict-canvas">Predict</a>
-                <a href="#" class="buttons" id="clear-canvas">Clear</a>
+              <div class="buttons-wrap">
+                <button class="button" id="predict-canvas">Predict</button>
+                <button class="button" id="clear-canvas">Clear</button>
               </div>
           </div>
 
@@ -83,17 +85,38 @@
       </div>
     </section>  
 
-    <footer id="footer" >
-      <h6>Developed by Arun Pandian R</h6>
-      <a class="footer-class" href="https://twitter.com/ArunPandianR10" target="_blank"><i class="social-media-icons fab fa-2x fa-twitter"></i></a>
-      <a class="footer-class" href="https://www.linkedin.com/in/arun-pandian-923825161" target="_blank"><i class="social-media-icons fab fa-2x fa-linkedin"></i></a>
-      <a class="footer-class" href="mailto:arunrk7.leo@gmail.com" target="_blank"><i class="social-media-icons far fa-2x fa-envelope"></i></a>
-    </footer>
+    <section id="instruction">
+      <div class="sub-title">
+        <h2 id="about-title">Instruction</h2>
+      </div>
+      <div class="description">
+        <p class="description">
+          Click and drag on the black space to draw a digit and then click on <span class="italise-highlight">Predict</span> to see predicted result.
+          Click on <span class="italise-highlight">Clear</span> to draw fresh.
+        </p>
 
+      </div>
+      
+    </section>
+
+    <section id="social">
+      <div class="sub-title">
+        <h2 id="social-title">Follow Me</h2>
+      </div>
+      <div class="social-icons">
+        <a href="https://twitter.com/ArunPandianR10" class="icon-button twitter"><i class="icon-twitter fab fa-twitter"></i><span></span></a>
+        <a href="https://www.facebook.com/arun.rathinakumar" class="icon-button facebook"><i class="icon-facebook fab fa-facebook-f"></i><span></span></a>
+        <a href="https://www.linkedin.com/in/arun-pandian-923825161/" class="icon-button google-plus"><i class="icon-google-plus fab fa-linkedin"></i><span></span></a>
+        <a href="https://kaggle.com/arunrk7" class="icon-button kaggle"><i class="icon-kaggle fab fa-kaggle"></i><span></span></a>
+        <a href="https://github.com/ArunRK7Codie" class="icon-button github"><i class="icon-github fab fa-github"></i><span></span></a>
+      </div>
+    </section>
+
+    
     
 
     
-    <script type="text/javascript" src="js\app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
       
   </body>
 </html>
