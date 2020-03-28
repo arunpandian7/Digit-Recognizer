@@ -1,0 +1,222 @@
+/* Lets add flavour to it. Shall We */
+
+#canvasapp{
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+#clear-canvas{
+  margin-left: 15px;
+}
+
+#confidence{
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 7.5%;
+}
+
+#content{
+  margin: 0 auto;
+  padding:2% 15%;
+  padding-bottom: 0;
+}
+
+#NavBar{
+  background-color: #880e4f;
+  color: #40aaad; /*#000 -> black*/
+}
+
+#predict-canvas{
+  margin-right: 15px;
+}
+
+#prediction_heading{
+  font-family: SourceSansPro-Black, Helvetica, Arial;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: #c51162;
+  
+}
+
+#result{
+  font-family: 'Pacifico', cursive;
+  font-size: 10rem;
+}
+
+#source{
+  padding: 0 100px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+
+#canvas-box{
+
+  height:200px;
+  width: 200px;
+  border: 2px solid #888;
+  border-radius: 4px;
+
+}
+
+#footer{
+  text-align: center;
+  padding: 1.5% 14%;
+  background-color: #880e4f;
+  color: #fff;
+}
+
+#title{
+  padding: 3% 15%;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+
+#confidence{
+font-family: OpenSans, Helvetica, Arial;
+font-size: 18px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 1px;
+line-height: 32px;
+text-transform: none;
+color: #5D656C;
+
+}
+
+
+
+
+.buttons {
+	box-shadow: 0px 11px 15px -6px #922522;	
+  background-color: transparent;
+  border:2px solid #e53935;
+	border-radius:14px;
+	display:inline-block;
+	cursor:pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size:16px;
+  color:#e53935;
+	font-weight:normal;
+	padding:8px 14px;
+  
+}
+.buttons:hover {
+  background-color:#e53935;
+  color: white;
+}
+.buttons:active {
+	position:relative;
+	top:1px;
+}
+
+.social-media-icons{
+  margin: 10px 40px;
+}
+
+.buttons_div{
+margin-bottom: 30px;
+}
+
+.heading{
+font-family: SourceSansPro-Black, Helvetica, Arial;
+font-size: 70px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 2px;
+line-height: 80px;
+text-transform: none;
+color: #3A4046;
+}
+
+.heading-desc{
+font-family: OpenSans, Helvetica, Arial;
+font-size: 18px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 1px;
+line-height: 32px;
+text-transform: none;
+color: #5D656C;
+}
+
+.leftside{
+text-align: center;
+margin: 0 auto;
+margin-top: 4%;
+/* padding-left: 10%; */
+}
+
+.navbar{
+padding: 1% 5%;
+}
+
+.navbar-brand{
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-size: 24px;
+letter-spacing: 1px;
+line-height: 12px;
+font-size: 1.5rem;
+font-weight: 800;
+}
+
+.nav-item{
+padding: 0 18px;
+}
+
+.predicted_answer{
+text-align: center;
+margin: 0 auto;
+padding: 3% 5%;
+padding-top: 0;
+/* padding-left: 10%; */
+}
+
+
+
+body{
+  background: white;
+  color: black;
+}
+
+hr {
+  border: 3px solid #c51162;
+  border-bottom: none;
+  width: 70%;
+  margin: none auto;
+  margin-bottom: none;
+}
+
+a.footer-class :link {
+  color: white;
+  text-decoration: none;
+}
+
+a.footer-class :visited {
+  color: white;
+  text-decoration: none;
+}
+
+a.footer-class :hover {
+  color: white;
+  text-decoration: none;
+}
+
+a.footer-class :active {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 720px) {
+  .leftside{
+    padding-left: 10%;
+  }
+}
