@@ -1,79 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <title>Digit Recognizer</title>
+    <title>Digit Recognizer</title>
 
-      <meta name="viewport" content="width=device-width">
-      <!-- GoogleFont -->
-      <link href="https://fonts.googleapis.com/css?family=Calistoga|Josefin+Sans:400,700|Pacifico&display=swap" rel="stylesheet">
-      <!-- bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <!-- stylesheet -->
-      <link rel="stylesheet" href="css/app.css">
-      <!-- fontawesome -->
-      <script src="https://kit.fontawesome.com/b3aed9cb07.js" crossorigin="anonymous"></script>
-      
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <meta name="viewport" content="width=device-width" />
+    <!-- GoogleFont -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Calistoga|Josefin+Sans:400,700|Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b3aed9cb07.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
   </head>
 
   <body onload="init()">
-      <section id="NavBar">
+    <section id="NavBar">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="">Arun Pandian R</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="container-fluid">
-    
-          <nav class="navbar navbar-expand-lg navbar-dark">
-    
-            <a class="navbar-brand" href="">Arun Pandian R</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="https://iamarunpandian.wordpress.com">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/ArunRK7Codie" target="_blank">Github</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.co.in">Contact</a>
-                </li>
-              </ul>
-            </div>
-    
-          </nav>
-        </div>
-      </section>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://github.com/ArunRK7Codie"
+                  target="_blank"
+                  >Github</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.co.in">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
 
     <section id="title">
-        <h1 class="heading"> Digit Recognizer</h1>
-        <p class="description"> A Deep Learning based Handwritten Digit Recognition Application built on Tensorflow and Keras.
-          The web-based UI built using frameworks and libraries like Node.js, npm, Bootstrap, jQuery, Ajax.
-        </p>
-        <hr>
-      </section>
-
-    
-
+      <h1 class="heading">Digit Recognizer</h1>
+      <p class="description">
+        A Deep Learning based Handwritten Digit Recognition Application built on
+        Tensorflow and Keras. The web-based UI built using frameworks and
+        libraries like Node.js, npm, Bootstrap, jQuery, Ajax.
+      </p>
+      <hr />
+    </section>
 
     <section id="content">
       <div class="canvasapp">
-        <div class ="row">
+        <div class="row">
           <div class="leftside">
-              <div class="">
-                <canvas id="canvas-box" height ="200" width="200">
-                </canvas>
-              </div>
+            <div class="">
+              <canvas id="canvas-box" height="200" width="200"> </canvas>
+            </div>
 
-              <div class="buttons-wrap">
-                <button class="button" id="predict-canvas">Predict</button>
-                <button class="button" id="clear-canvas">Clear</button>
-              </div>
+            <div class="buttons-wrap">
+              <button class="button" id="predict-canvas">Predict</button>
+              <button class="button" id="clear-canvas">Clear</button>
+            </div>
           </div>
 
           <div class="predicted_output col-sm-6">
@@ -83,7 +106,7 @@
           </div>
         </div>
       </div>
-    </section>  
+    </section>
 
     <section id="instruction">
       <div class="sub-title">
@@ -91,12 +114,12 @@
       </div>
       <div class="description">
         <p class="description">
-          Click and drag on the black space to draw a digit and then click on <span class="italise-highlight">Predict</span> to see predicted result.
-          Click on <span class="italise-highlight">Clear</span> to draw fresh.
+          Click and drag on the black space to draw a digit and then click on
+          <span class="italise-highlight">Predict</span> to see predicted
+          result. Click on <span class="italise-highlight">Clear</span> to draw
+          fresh.
         </p>
-
       </div>
-      
     </section>
 
     <section id="social">
@@ -104,19 +127,32 @@
         <h2 id="social-title">Follow Me</h2>
       </div>
       <div class="social-icons">
-        <a href="https://twitter.com/ArunPandianR10" class="icon-button twitter"><i class="icon-twitter fab fa-twitter"></i><span></span></a>
-        <a href="https://www.facebook.com/arun.rathinakumar" class="icon-button facebook"><i class="icon-facebook fab fa-facebook-f"></i><span></span></a>
-        <a href="https://www.linkedin.com/in/arun-pandian-923825161/" class="icon-button google-plus"><i class="icon-google-plus fab fa-linkedin"></i><span></span></a>
-        <a href="https://kaggle.com/arunrk7" class="icon-button kaggle"><i class="icon-kaggle fab fa-kaggle"></i><span></span></a>
-        <a href="https://github.com/ArunRK7Codie" class="icon-button github"><i class="icon-github fab fa-github"></i><span></span></a>
+        <a href="https://twitter.com/ArunPandianR10" class="icon-button twitter"
+          ><i class="icon-twitter fab fa-twitter"></i><span></span
+        ></a>
+        <a
+          href="https://www.facebook.com/arun.rathinakumar"
+          class="icon-button facebook"
+          ><i class="icon-facebook fab fa-facebook-f"></i><span></span
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/arun-pandian-923825161/"
+          class="icon-button google-plus"
+          ><i class="icon-google-plus fab fa-linkedin"></i><span></span
+        ></a>
+        <a href="https://kaggle.com/arunrk7" class="icon-button kaggle"
+          ><i class="icon-kaggle fab fa-kaggle"></i><span></span
+        ></a>
+        <a href="https://github.com/ArunRK7Codie" class="icon-button github"
+          ><i class="icon-github fab fa-github"></i><span></span
+        ></a>
       </div>
     </section>
 
-    
-    
+    <footer id="footer">
+      <h6 class="credits">Designed and Developed by Arun Pandian R.</h6>
+    </footer>
 
-    
     <script type="text/javascript" src="js/app.js"></script>
-      
   </body>
 </html>
