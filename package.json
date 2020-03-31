@@ -1,7 +1,7 @@
 {
   "name": "digit-recognizer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Handwritten Digit Recognition Application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/ArunRK7Codie/Digit-Recognizer.git"
   },
-  "keywords": [],
+  "keywords": [
+  "node.js",
+  "tensorflow",
+  "deep learning",
+  "web application"],
   "author": "",
   "license": "ISC",
   "bugs": {

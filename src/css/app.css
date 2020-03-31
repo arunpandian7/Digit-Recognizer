@@ -328,6 +328,9 @@ padding-top: 0;
   outline: none;
 }
 
+#Navbar a{
+  color: #34E55E;
+}
 
 body{
   background: #FBFBFF;
