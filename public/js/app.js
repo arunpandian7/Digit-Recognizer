@@ -118,7 +118,7 @@ let model;
 
 (async function(){
     console.log("Model Loading.....");
-    model = await tf.loadLayersModel(base_url+"cnn_model/model.json");
+    model = await tf.loadLayersModel(base_url+"/cnn_model/model.json");
     console.log("Model loaded...");
 })();
 
