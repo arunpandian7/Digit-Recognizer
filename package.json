@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/ArunRK7Codie/Digit-Recognizer#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
   }
 }
