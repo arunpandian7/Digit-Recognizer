@@ -2,7 +2,7 @@
     "name": "Digit Recognizer Web Application",
     "description": "Deep Learning based handwritten digit recognition application",
     "repository": "https://github.com/ArunRK7Codie/Digit-Recognizer.git",
-    "logo": "https://digit-recognizer-web.herokuapp.com/favicon.svg",
+    "logo": "https://digit-recognizer-web.herokuapp.com/favicon.png",
     "keywords": ["node", "express", "heroku"],
     "image": "heroku/nodejs"
   }
