@@ -1,13 +1,13 @@
 
 
-const express = require("express");
-const bodyParser = require("body-parser");
-const request = require("request");
+import express, { static } from "express";
+import { urlencoded } from "body-parser";
+import request from "request";
 
 const app = express();
 
-app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(static("public"));
+app.use(urlencoded({extended: true}));
 
 app.get("/", function(req,res){
 

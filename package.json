@@ -11,14 +11,18 @@
     "url": "git+https://github.com/ArunRK7Codie/Digit-Recognizer.git"
   },
   "keywords": [
-  "node.js",
-  "tensorflow",
-  "deep learning",
-  "web application"],
+    "node.js",
+    "tensorflow",
+    "deep learning",
+    "web application"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArunRK7Codie/Digit-Recognizer/issues"
   },
-  "homepage": "https://github.com/ArunRK7Codie/Digit-Recognizer#readme"
+  "homepage": "https://github.com/ArunRK7Codie/Digit-Recognizer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
