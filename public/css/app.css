@@ -1,0 +1,354 @@
+/* Lets add flavour to it. Shall We */
+
+#canvasapp{
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+#clear-canvas{
+  margin-left: 15px;
+}
+
+#confidence{
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 7.5%;
+}
+
+#content{
+  margin: 0 auto;
+  padding:2% 15%;
+  padding-bottom: 0;
+}
+
+#NavBar{
+  background-color: #073042;
+  color: #40aaad; /*#000 -> black*/
+}
+
+#predict-canvas{
+  margin-right: 15px;
+}
+
+#prediction_heading{
+  font-family: SourceSansPro-Black, Helvetica, Arial;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: #03161E;
+  
+}
+
+#result{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10rem;
+}
+
+#source{
+  padding: 0 100px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+
+#canvas-box{
+
+  height:200px;
+  width: 200px;
+  border: 2px solid #888;
+  border-radius: 4px;
+
+}
+
+
+#title{
+  padding-top: 3%;
+  padding-right: 7.5%;
+  padding-left: 7.5%;
+  padding-bottom: 0%;
+  margin: 0 auto;
+  text-align: center;
+  color: #757575;
+}
+
+#instruction{
+  padding: 3% 15%;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+
+
+#confidence{
+font-family: OpenSans, Helvetica, Arial;
+font-size: 18px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 1px;
+line-height: 32px;
+text-transform: none;
+color: #5D656C;
+}
+#social{
+  padding: 0% 9%;
+  margin: 0 0;
+  text-align: center;
+  color: black;
+
+}
+
+#footer{
+  padding: 3% 30%;
+  margin: 0 0;
+  text-align: center;
+  color: gray;
+}
+
+
+
+
+.sub-title{
+font-family: SourceSansPro-Black, Helvetica, Arial;
+font-size: 50px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 1px;
+line-height: 60px;
+text-transform: none;
+color: rgb(24, 26, 27);
+}
+
+.buttons-wrap {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credits{
+  font-family: OpenSans, Helvetica, Arial;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #3ddc84;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #34E55E;
+  box-shadow: 0px 15px 20px #18692B;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+
+
+
+.social-media-icons{
+  margin: 10px 40px;
+}
+
+.heading{
+font-family: SourceSansPro-Black, Helvetica, Arial;
+font-size: 70px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 2px;
+line-height: 80px;
+text-transform: none;
+color: #03161E;
+}
+
+.description{
+font-family: OpenSans, Helvetica, Arial;
+font-size: 18px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 1px;
+line-height: 32px;
+text-transform: none;
+color: #6B818C;
+}
+
+.leftside{
+text-align: center;
+margin: 0 auto;
+margin-top: 4%;
+/* padding-left: 10%; */
+}
+
+.navbar{
+padding: 1% 5%;
+}
+
+.navbar-brand{
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-size: 24px;
+letter-spacing: 1px;
+line-height: 12px;
+font-size: 1.5rem;
+font-weight: 800;
+}
+
+.nav-item{
+padding: 0 18px;
+}
+
+.predicted_answer{
+text-align: center;
+margin: 0 auto;
+padding: 3% 5%;
+padding-top: 0;
+/* padding-left: 10%; */
+}
+
+.italise-highlight{
+  font-style: italic;
+}
+
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin: -1.8rem;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #0077B5;
+}
+
+.kaggle span{
+  background-color: #20beff;
+}
+
+.github span{
+  background-color: #000000;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .icon-google-plus {
+	color: #0077B5;
+}
+.icon-button .icon-kaggle{
+  color: #20beff;
+}
+
+.icon-button .icon-github{
+  color: #000000;
+}
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .icon-kaggle,
+.icon-button:hover .icon-github {
+	color: #ffffff;
+}
+
+.button:focus{
+  outline: none;
+}
+
+#Navbar a{
+  color: #34E55E;
+}
+
+body{
+  background: #FBFBFF;
+  color: black;
+}
+
+hr {
+  border: 3px solid #34E55E;
+  border-bottom: none;
+  width: 70%;
+  margin: none auto;
+  margin-bottom: none;
+}
+
+
+
+@media (min-width: 720px) {
+  .leftside{
+    padding-left: 10%;
+  }
+}
