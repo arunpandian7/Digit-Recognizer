@@ -36,8 +36,9 @@
 }
 
 #prediction_heading{
-  font-family: SourceSansPro-Black, Helvetica, Arial;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.5rem;
+  letter-spacing: 1.5px;
   margin-bottom: 0;
   color: #03161E;
   
@@ -109,14 +110,16 @@ color: #5D656C;
 }
 
 
-
+.predicted_output{
+  padding-top: 25px;
+}
 
 .sub-title{
-font-family: SourceSansPro-Black, Helvetica, Arial;
+font-family: 'Source Sans Pro', sans-serif;
 font-size: 50px;
 font-style: normal;
 font-weight: normal;
-letter-spacing: 1px;
+letter-spacing: 1.75px;
 line-height: 60px;
 text-transform: none;
 color: rgb(24, 26, 27);
@@ -168,7 +171,7 @@ color: rgb(24, 26, 27);
 }
 
 .heading{
-font-family: SourceSansPro-Black, Helvetica, Arial;
+font-family: 'Source Sans Pro', sans-serif;
 font-size: 70px;
 font-style: normal;
 font-weight: normal;
@@ -179,7 +182,7 @@ color: #03161E;
 }
 
 .description{
-font-family: OpenSans, Helvetica, Arial;
+font-family: 'Open Sans', sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: normal;
@@ -201,13 +204,10 @@ padding: 1% 5%;
 }
 
 .navbar-brand{
-font-family: 'Raleway', sans-serif;
-font-style: normal;
-font-size: 24px;
+font-family: 'Press Start 2P', cursive;
+font-size: 14px;
 letter-spacing: 1px;
-line-height: 12px;
-font-size: 1.5rem;
-font-weight: 800;
+line-height: 20px;
 }
 
 .nav-item{
