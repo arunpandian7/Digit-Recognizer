@@ -32,3 +32,5 @@ Web-app link: https://digit-recognizer-web.herokuapp.com
   ## Acknowledgements
   The application is hosted in [Heroku](https://www.heroku.com)- a free cloud platform. The DL model has been developed and trained in [Google Colab](https://colab.research.google.com)- free jupyter notebook environment for developing and training ML models in cloud.
 
+## License
+This project has been licensed under MIT License. You can check the [License file](https://github.com/ArunRK7Codie/Digit-Recognizer/blob/master/LICENSE) to view the license
