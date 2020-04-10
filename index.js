@@ -3,8 +3,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
+var favicon = require('serve-favicon');
 
 const app = express();
+
+app.use(favicon(path.join(__dirname,'public','favicon.svg')));
 
 app.use(express.static("public/"));
 app.use(bodyParser.urlencoded({extended: true}));
